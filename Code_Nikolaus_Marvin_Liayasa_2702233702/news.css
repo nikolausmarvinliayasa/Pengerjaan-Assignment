@@ -1,0 +1,372 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(34, 34, 34, 0.9);
+    color: #fff;
+    z-index: 10;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    margin-left: -20px;
+    padding-left: 15px;
+    padding-right: 25px;
+    background-color: rgba(34, 34, 34, 1);
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 25px;
+}
+
+header img {
+    width: 40px;
+    height: 50px;
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    padding: 20px;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+main {
+    margin-top: 90px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.featured-news {
+    margin-top: -60px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.featured-news:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+}
+
+.featured-news h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.news-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.news-item img {
+    max-width: 40%;
+    padding-right: 50px;
+}
+
+.news-content {
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-category {
+    color: #f0a500;
+    font-weight: bold;
+}
+
+.news-content h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.news-content p {
+    margin: 10px 0;
+}
+
+.news-content .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0a500;
+    color: #202020;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.news-content .button:hover {
+    background-color: #d48800;
+}
+
+.news-content .news-date {
+    align-self: flex-end;
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.blogs {
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 20px;
+    padding-top: -20px;
+}
+
+.blogs h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.blogs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blog-item {
+    background-color: #202020;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+.blog-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.blog-item img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-date {
+    color: #f0a500;
+    font-size: 0.9em;
+}
+
+.blog-content h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.blog-content p {
+    margin: 10px 0;
+}
+
+.blog-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0a500;
+    color: #202020;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.blog-button:hover {
+    background-color: #d48800;
+}
+
+.blog-content .read-time {
+    align-items: center;
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+.blog-content .clock-icon {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.3em;
+}
+
+footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    width: 100%;
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.footer-logo1 {
+    margin: 0 10px;
+    height: 40px;
+}
+
+.footer-logo2 {
+    margin: 0 10px;
+    height: 65px;
+}
+
+.footer-logo-container span {
+    font-weight: bold;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.social-icon {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.3);
+}
+
+.social-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0000;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: white;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+        padding: 10px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+        width: auto;
+    }
+
+    .news-item {
+        flex-direction: column;
+    }
+
+    .news-item img, .news-content {
+        max-width: 100%;
+        margin: 0;
+    }
+    .blog-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .footer-logos {
+        flex-direction: column;
+    }
+
+    .footer-logo-container {
+        margin: 10px 0;
+    }
+}
+
